@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 
 # 读取第一个文件的第一列数据
-file1 = '/home/undergrads/EnergyIteration.txt'
+
 data1 = []
 with open(file1, 'r') as f:
     for line in f:
@@ -10,7 +10,7 @@ with open(file1, 'r') as f:
             data1.append(float(values[0]))
 
 # 读取第二个文件的第一列数据
-file2 = '/home/undergrads/EnergyIteration1.txt'
+
 data2 = []
 with open(file2, 'r') as f:
     for line in f:
