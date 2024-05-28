@@ -5,19 +5,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.interpolate import griddata
 
-# SFTP服务器信息
-hostname = '10.158.198.180'
-port = 22
-username = 'undergrads'
-password = 'undergrads'  # 替换为实际的密码
 
 # 连接到SFTP服务器
 transport = paramiko.Transport((hostname, port))
 transport.connect(username=username, password=password)
 sftp = paramiko.SFTPClient.from_transport(transport)
 
-# 遍历目录并读取数据
-base_path = '/home/undergrads/n=20/'
+
 data = []
 
 def read_average_file(file_path):
